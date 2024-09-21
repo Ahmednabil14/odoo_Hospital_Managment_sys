@@ -61,7 +61,7 @@ class Patient(models.Model):
     def _compute_age(self):
         for record in self:
             if record.birth_date:
-                record.age = relativedelta(fields.Date.today(), record.birth_date).year
+                record.age = relativedelta(fields.Date.today(), record.birth_date).years
 
 
     @api.model
