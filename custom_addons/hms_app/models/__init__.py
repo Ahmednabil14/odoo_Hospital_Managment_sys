@@ -1,0 +1,1 @@
+from . import patien, department, doctor, customer
